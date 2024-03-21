@@ -11,7 +11,7 @@
     crossorigin="anonymous" referrerpolicy="no-referrer">
   
   <script type="module" crossorigin src="/t7d5/commonHelpers.js"></script>
-  <link rel="stylesheet" href="/t7d5/assets/index-762b554d.css">
+  <link rel="stylesheet" href="/t7d5/assets/index-3da6d037.css">
 </head>
 
 <body>
@@ -255,81 +255,103 @@
   <!-- developer - Eduard Dovhan -->
   <section class="section contact-us-section">
   <div class="container">
-    <h2 class="section-title">Contact Us</h2>
-    <div class="contact-form-wrapper">
-      <p class="contact-us-text">
-        Please use the form below to contact us. Enter your name, email, phone,
-        and message and we'll get back to you shortly.
-      </p>
-      <form class="contact-form">
-        <label class="contact-form-label">
-          <input
-            class="contact-form-input"
-            name="user-name"
-            type="text"
-            title="John Jones"
-            placeholder="Name"
-            required
-            pattern="[a-zA-Zа-яА-ЯіІїЇєЄґҐ']+"
-          />
-        </label>
+    <h2 class="section-title contact-us-title">Contact Us</h2>
+    <div class="contact-us-container">
+      <div class="contact-form-wrapper">
+        <p class="contact-us-text">
+          Please use the form below to contact us. Enter your name, email,
+          phone, and message and we'll get back to you shortly.
+        </p>
+        <form class="contact-form">
+          <label class="contact-form-label">
+            <input
+              class="contact-form-input"
+              name="user-name"
+              type="text"
+              title="John Jones"
+              placeholder="Name"
+              required
+              pattern="[a-zA-Zа-яА-ЯіІїЇєЄґҐ']+"
+            />
+          </label>
 
-        <label class="contact-form-label">
-          <input
-            class="contact-form-input"
-            name="user-email"
-            type="email"
-            title="useremail@mail.com"
-            placeholder="Email"
-            required
-            pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9]+./[a-zA-Z]{2,}"
-          />
-        </label>
+          <label class="contact-form-label">
+            <input
+              class="contact-form-input"
+              name="user-email"
+              type="email"
+              title="useremail@mail.com"
+              placeholder="Email"
+              required
+              pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9]+./[a-zA-Z]{2,}"
+            />
+          </label>
 
-        <label class="contact-form-label">
-          <input
-            class="contact-form-input"
-            name="user-phone"
-            type="tel"
-            placeholder="+380"
-            required
-          />
-        </label>
+          <label class="contact-form-label">
+            <input
+              class="contact-form-input"
+              name="user-phone"
+              type="tel"
+              placeholder="+380"
+              required
+            />
+          </label>
 
-        <label class="contact-form-label">
-          <textarea
-            class="contact-form-textarea"
-            name="user-comment"
-            type="text"
-            placeholder="Comment"
-          ></textarea>
-        </label>
-        <button class="contact-form-send-btn" type="submit">Send</button>
-      </form>
+          <label class="contact-form-label">
+            <textarea
+              class="contact-form-textarea"
+              name="user-comment"
+              type="text"
+              placeholder="Comment"
+            ></textarea>
+          </label>
+          <button class="contact-form-send-btn" type="submit">Send</button>
+        </form>
+      </div>
+
+      <picture>
+        <source
+          type="image/webp"
+          srcset="/t7d5/assets/contact-watch-pc@1-60024222.webp 1x, /t7d5/assets/contact-watch-pc@2-dfa39606.webp 2x"
+          media="(min-width: 1280px)"
+        />
+
+        <source
+          type="image/jpeg"
+          srcset="/t7d5/assets/contact-watch-pc@1-aeddee06.jpg 1x, /t7d5/assets/contact-watch-pc@2-cda614db.jpg 2x"
+          media="(min-width: 1280px)"
+        />
+
+        <source
+          type="image/webp"
+          srcset="/t7d5/assets/contact-watch-tab@1-3131f779.webp 1x, /t7d5/assets/contact-watch-tab@2-a1b2e535.webp 2x"
+          media="(min-width: 768px)"
+        />
+        <source
+          type="image/jpeg"
+          srcset="/t7d5/assets/contact-watch-tab@1-8a038a72.jpg 1x, /t7d5/assets/contact-watch-tab@2-be424c35.jpg 2x"
+          media="(min-width: 768px)"
+        />
+
+        <source
+          type="image/webp"
+          srcset="/t7d5/assets/contact-watch-mob@1-f7a6bab9.webp 1x, /t7d5/assets/contact-watch-mob@2-e0d37a57.webp 2x"
+          media="(max-width: 767px)"
+        />
+        <source
+          type="image/jpeg"
+          srcset="/t7d5/assets/contact-watch-mob@1-daef4a92.jpg 1x, /t7d5/assets/contact-watch-mob@2-d3697e50.jpg 2x"
+          media="(max-width: 767px)"
+        />
+        <img
+          class="team-list-item-photo"
+          src="/t7d5/assets/contact-watch-mob@1-daef4a92.jpg"
+          alt="Watch"
+        />
+      </picture>
     </div>
-
-    <picture>
-      <source
-        srcset="/t7d5/assets/contact-watch-pc@1-60024222.webp 1x, /t7d5/assets/contact-watch-pc@2-dfa39606.webp 2x"
-        media="(min-width: 1280px)"
-      />
-      <source
-        srcset="/t7d5/assets/contact-watch-tab@1-3131f779.webp 1x, /t7d5/assets/contact-watch-tab@2-a1b2e535.webp 2x"
-        media="(min-width: 768px)"
-      />
-      <source
-        srcset="/t7d5/assets/contact-watch-mob@1-f7a6bab9.webp 1x, /t7d5/assets/contact-watch-mob@2-e0d37a57.webp 2x"
-        media="(max-width: 767px)"
-      />
-      <img
-        class="team-list-item-photo"
-        src="/t7d5/assets/contact-watch-mob@1-daef4a92.jpg"
-        alt="cool watch"
-      />
-    </picture>
   </div>
 </section>
-
   <!-- developer - Marta -->
   
   <!-- developer - ________ -->
