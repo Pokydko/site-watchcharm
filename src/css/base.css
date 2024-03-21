@@ -23,6 +23,19 @@
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
 }
 
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+}
+
 body {
   color: rgba(12, 12, 12, 0.7);
   font-weight: 500;
@@ -32,8 +45,14 @@ body {
   letter-spacing: -0.02em;
 }
 
+.section {
+  padding-bottom: 100px;
+}
+
 .container {
   max-width: 375px;
+  margin-right: auto;
+  margin-left: auto;
   padding-right: 20px;
   padding-left: 20px;
 }
@@ -69,4 +88,20 @@ body {
     padding-right: 65px;
     padding-left: 65px;
   }
+}
+
+button {
+  min-width: 160px;
+  height: 48px;
+  border-radius: 16px;
+  background: #3350e9;
+  color: #fbfbfb;
+  outline: 2px solid rgba(51, 80, 233, 0.2);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
+}
+button:hover,
+button:focus {
+  background: #1f3cd4;
 }
