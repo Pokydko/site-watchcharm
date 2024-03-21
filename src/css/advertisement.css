@@ -1,5 +1,5 @@
 .advertisement {
-  background-image: url('../img/ad/ad-bg-mob@1.webp');
+  background-image: url('/img/ad/ad-bg-mob@1.webp');
   background-size: cover;
   background-repeat: no-repeat;
   max-width: 335px;
@@ -14,30 +14,30 @@
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .advertisement {
-    background-image: url('../img/ad/ad-bg-mob@2.webp');
+    background-image: url('/img/ad/ad-bg-mob@2.webp');
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1279px) {
   .advertisement {
-    background-image: url('../img/ad/ad-bg-tab@1.webp');
+    background-image: url('/img/ad/ad-bg-tab@1.webp');
   }
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .advertisement {
-      background-image: url('../img/ad/ad-bg-tab@2.webp');
+      background-image: url('/img/ad/ad-bg-tab@2.webp');
     }
   }
 }
 @media screen and (min-width: 1280px) {
   .advertisement {
-    background-image: url('../img/ad/ad-bg-pc@1.webp');
+    background-image: url('/img/ad/ad-bg-pc@1.webp');
   }
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .advertisement:after {
-      background-image: url('../img/ad/ad-bg-pc@2.webp');
+      background-image: url('/img/ad/ad-bg-pc@2.webp');
     }
   }
 }
