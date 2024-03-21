@@ -46,7 +46,7 @@ body {
 }
 
 .section {
-  padding-bottom: 100px;
+  padding-bottom: 60px;
 }
 
 .container {
@@ -64,12 +64,16 @@ body {
   line-height: 1;
   letter-spacing: -0.02em;
   text-align: left;
+  margin-bottom: 24px;
 }
 
 @media (min-width: 768px) {
   body {
     font-size: 16px;
     line-height: 1.25;
+  }
+  .section {
+    padding-bottom: 80px;
   }
   .container {
     max-width: 768px;
@@ -79,10 +83,14 @@ body {
   .section-title {
     font-size: 48px;
     line-height: 0.92;
+    margin-bottom: 40px;
   }
 }
 
 @media (min-width: 1280px) {
+  .section {
+    padding-bottom: 100px;
+  }
   .container {
     max-width: 1280px;
     padding-right: 65px;
@@ -90,18 +98,18 @@ body {
   }
 }
 
-button {
+.button {
   min-width: 160px;
   height: 48px;
   border-radius: 16px;
-  background: #3350e9;
+  background-color: #3350e9;
   color: #fbfbfb;
-  outline: 2px solid rgba(51, 80, 233, 0.2);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.29;
 }
-button:hover,
-button:focus {
+.button:hover,
+.button:focus {
+  outline: 2px solid rgba(51, 80, 233, 0.2);
   background: #1f3cd4;
 }

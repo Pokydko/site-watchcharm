@@ -1,0 +1,66 @@
+.advertisement {
+  background-image: url('../img/ad/ad-bg-mob@1.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 335px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  border-radius: 30px;
+  background-color: #0c0c0c;
+}
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .advertisement {
+    background-image: url('../img/ad/ad-bg-mob@2.webp');
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .advertisement {
+    background-image: url('../img/ad/ad-bg-tab@1.webp');
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .advertisement {
+      background-image: url('../img/ad/ad-bg-tab@2.webp');
+    }
+  }
+}
+@media screen and (min-width: 1280px) {
+  .advertisement {
+    background-image: url('../img/ad/ad-bg-pc@1.webp');
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .advertisement:after {
+      background-image: url('../img/ad/ad-bg-pc@2.webp');
+    }
+  }
+}
+.advertisement .container {
+  padding-right: 28px;
+  padding-left: 28px;
+}
+
+.advertisement-text {
+  max-width: 279px;
+  margin-bottom: 28px;
+  color: #fbfbfb;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+
+.advertisement-marked-text {
+  color: rgba(251, 251, 251, 0.5);
+}
+
+.btn-ad {
+  border: 1px solid rgba(251, 251, 251, 0.15);
+  background-color: inherit;
+}
