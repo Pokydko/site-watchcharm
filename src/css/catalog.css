@@ -1,4 +1,3 @@
-
 .catalog-list {
   display: flex;
   flex-direction: column;
@@ -29,7 +28,6 @@
 .catalog-sub-title {
   margin-bottom: 8px;
   color: #0c0c0c;
-  font-weight: 500;
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: -0.02em;
@@ -38,7 +36,6 @@
 .catalog-text {
   color: rgba(12, 12, 12, 0.5);
   font-weight: 400;
-  font-size: 14px;
   line-height: 1.29;
   letter-spacing: -0.02em;
 }
@@ -66,7 +63,6 @@ button.catalog-show-more-btn {
 }
 
 @media screen and (min-width: 768px) {
-
   .catalog-sub-title {
     display: block;
     overflow: hidden;
