@@ -1,0 +1,120 @@
+
+.catalog-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.catalog-list-item {
+  max-width: 335px;
+  max-height: 364px;
+  padding: 24px 28px;
+  border: 1px solid rgba(12, 12, 12, 0.05);
+  border-radius: 30px;
+  background-color: #f3f3f3;
+}
+.catalog-img {
+  display: block;
+  width: 100%;
+  width: 279px;
+  height: 262px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.catalog-product-info {
+  margin-top: 10px;
+}
+.catalog-sub-title {
+  margin-bottom: 8px;
+  color: #0c0c0c;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+}
+
+.catalog-text {
+  color: rgba(12, 12, 12, 0.5);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+}
+.catalog-list-item:hover {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+button.catalog-show-more-btn {
+  display: block;
+  align-items: center;
+  min-width: 160px;
+  min-height: 48px;
+  margin: 0 auto;
+  margin-top: 40px;
+  border-radius: 16px;
+  background: #3350e9;
+  color: #fbfbfb;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.28;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+
+  .catalog-sub-title {
+    display: block;
+    overflow: hidden;
+    font-size: 20px;
+    line-height: 1;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .catalog-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 32px 16px;
+  }
+
+  .catalog-list-item {
+    max-width: 344px;
+    max-height: 414px;
+    padding: 24px 32px;
+  }
+  .catalog-img {
+    width: 280px;
+    height: 312px;
+  }
+  .catalog-sub-title {
+    font-size: 20px;
+    line-height: 1;
+  }
+
+  .hidden {
+    display: block;
+  }
+
+  button.catalog-show-more-btn {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .catalog-list {
+    gap: 32px 23px;
+  }
+  .catalog-list-item {
+    max-width: 368px;
+    max-height: 414px;
+  }
+  .catalog-img {
+    width: 304px;
+    height: 312px;
+  }
+}
