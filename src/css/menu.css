@@ -8,7 +8,7 @@
       rgba(12, 12, 12, 0.92),
       rgba(12, 12, 12, 0.92)
     ),
-    url('../img/menu/menu-bg-mob@1.webp'), url('../img/menu/menu-bg-mob@1.jpg');
+    url('/img/menu/menu-bg-mob@1.webp'), url('/img/menu/menu-bg-mob@1.jpg');
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -31,8 +31,7 @@
         rgba(12, 12, 12, 0.92),
         rgba(12, 12, 12, 0.92)
       ),
-      url('../img/menu/menu-bg-mob@2.webp'),
-      url('../img/menu/menu-bg-mob@2.jpg');
+      url('/img/menu/menu-bg-mob@2.webp'), url('/img/menu/menu-bg-mob@2.jpg');
   }
 }
 @media only screen and (min-width: 768px) {
@@ -41,8 +40,7 @@
         rgba(12, 12, 12, 0.92),
         rgba(12, 12, 12, 0.92)
       ),
-      url('../img/menu/menu-bg-tab@1.webp'),
-      url('../img/menu/menu-bg-tab@1.jpg');
+      url('/img/menu/menu-bg-tab@1.webp'), url('/img/menu/menu-bg-tab@1.jpg');
   }
 }
 @media only screen and (min-resolution: 192dpi) and (min-width: 768px) and (max-width: 1279px) {
@@ -51,8 +49,7 @@
         rgba(12, 12, 12, 0.92),
         rgba(12, 12, 12, 0.92)
       ),
-      url('../img/menu/menu-bg-tab@2.webp'),
-      url('../img/menu/menu-bg-tab@2.jpg');
+      url('/img/menu/menu-bg-tab@2.webp'), url('/img/menu/menu-bg-tab@2.jpg');
   }
 }
 .mobile-menu-container {
