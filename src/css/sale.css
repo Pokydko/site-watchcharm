@@ -1,0 +1,179 @@
+.sale-list-watch {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  margin-bottom: 20px;
+}
+.sale-item {
+  margin-bottom: 20px;
+}
+.sale-list-item-watch-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(12, 12, 12, 0.05);
+  border-radius: 16px;
+  width: 80px;
+  height: 80px;
+  background: #f3f3f3;
+  margin: 0 auto;
+}
+.sale-wath-head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  border: 1px solid rgba(12, 12, 12, 0.05);
+  border-radius: 30px;
+  background: #f3f3f3;
+  width: 335px;
+  height: 385px;
+}
+.sale-watch-info {
+  border-radius: 30px;
+  width: 335px;
+  height: 561px;
+  background: #3350e9;
+  padding: 48px 24px;
+}
+.sale-watch-info-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: -0.02em;
+  color: #fbfbfb;
+  max-width: 279px;
+  margin-bottom: 10px;
+}
+.sale-watch-info-product-number {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.3;
+  letter-spacing: -0.02em;
+  color: rgba(251, 251, 251, 0.5);
+  margin-bottom: 20px;
+}
+.sale-watch-info-price {
+  display: flex;
+  align-items: center;
+  margin-bottom: 28px;
+}
+.sale-watch-info-price-current {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+  color: #fbfbfb;
+  border-radius: 8px;
+  width: 68px;
+  height: 32px;
+  background: rgba(251, 251, 251, 0.1);
+}
+.sale-watch-info-price-previous {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: -0.02em;
+  text-decoration: line-through;
+  color: rgba(251, 251, 251, 0.5);
+  margin-left: 9px;
+}
+.sale-watch-info-characteristics {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.3;
+  letter-spacing: -0.02em;
+  color: rgba(251, 251, 251, 0.7);
+  max-width: 279px;
+  margin-bottom: 28px;
+}
+
+.sale-watch-advantages {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.sale-watch-advantages-item {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.3;
+  color: #fbfbfb;
+  border: 1px solid rgba(251, 251, 251, 0.2);
+  border-radius: 8px;
+  padding: 8px 12px;
+  width: auto;
+  height: 32px;
+}
+@media screen and (min-width: 768px) {
+  .sale-list-item-watch-container {
+    border-radius: 20px;
+    width: 132px;
+    height: 132px;
+  }
+  .sale-list-watch {
+    flex-direction: column;
+    gap: 10px;
+    max-width: 132px;
+  }
+  .sale-watch-container {
+    display: flex;
+    margin-bottom: 40px;
+  }
+  .sale-wath-head {
+    width: 552px;
+    height: 558px;
+    margin-left: 20px;
+  }
+  .sale-watch-info {
+    width: 704px;
+    height: 518px;
+    margin-bottom: 40px;
+    padding: 60px;
+  }
+  .sale-watch-info-title {
+    font-size: 32px;
+    line-height: 1.12;
+    max-width: 436px;
+  }
+  .sale-watch-info-price {
+    margin-bottom: 30px;
+  }
+  .sale-watch-info-price-current {
+    font-size: 20px;
+    width: 78px;
+    height: 32px;
+  }
+  .sale-watch-info-characteristics {
+    max-width: 584px;
+    font-size: 16px;
+    line-height: 1.25;
+    margin-bottom: 40px;
+  }
+  .sale-watch-advantages {
+    max-width: 398px;
+  }
+  .sale-watch-advantages {
+    height: 76px;
+  }
+  .sale-watch-advantages-item {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .sale-container {
+    display: flex;
+  }
+
+  .sale-wath-head {
+    width: 428px;
+    height: 558px;
+  }
+  .sale-watch-info {
+    width: 530px;
+    height: 558px;
+    margin-left: 40px;
+  }
+}
