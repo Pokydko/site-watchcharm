@@ -1,4 +1,4 @@
-.catalog-title {
+.section-title {
   margin-bottom: 24px;
   color: #0c0c0c;
   font-weight: 600;
@@ -11,6 +11,7 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
+  align-items: center;
 }
 
 .catalog-list-item {
@@ -115,7 +116,8 @@ button.catalog-show-more-btn {
     display: none;
   }
 }
-@media screen and (min-width: 1440px) {
+
+@media screen and (min-width: 1280px) {
     .catalog-list {
     gap: 32px 23px;
   }
