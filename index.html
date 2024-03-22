@@ -372,7 +372,7 @@
 </ul>
 </section>
   <!-- developer - Eduard Dovhan -->
-  <section class="section contact-us-section">
+  <section class="section contact-us-section" id="contact">
   <div class="container">
     <h2 class="section-title contact-us-title">Contact Us</h2>
     <div class="contact-us-container">
@@ -399,10 +399,10 @@
               class="contact-form-input"
               name="user-email"
               type="email"
-              title="useremail@mail.com"
+              title="useremail@xx.xx"
               placeholder="Email"
               required
-              pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9]+./[a-zA-Z]{2,}"
+              pattern="[a-zA-Z0-9._%+]+@[a-zA-Z0-9]+.[a-zA-Z]{2,}"
             />
           </label>
 
@@ -411,8 +411,10 @@
               class="contact-form-input"
               name="user-phone"
               type="tel"
+              title="+380xxxxxxxxx"
               placeholder="+380"
               required
+              pattern="[+380]{4}[0-9]{9}"
             />
           </label>
 
@@ -424,7 +426,9 @@
               placeholder="Comment"
             ></textarea>
           </label>
-          <button class="contact-form-send-btn" type="submit">Send</button>
+          <button class="button contact-form-send-btn" type="submit">
+            Send
+          </button>
         </form>
       </div>
 
@@ -463,7 +467,7 @@
           media="(max-width: 767px)"
         />
         <img
-          class="team-list-item-photo"
+          class="contact-us-content-photo"
           src="/t7d5/assets/contact-watch-mob@1-daef4a92.jpg"
           alt="Watch"
         />
