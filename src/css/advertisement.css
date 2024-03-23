@@ -1,12 +1,16 @@
 .advertisement {
   max-width: 335px;
-  margin-right: auto;
-  margin-left: auto;
   padding-top: 60px;
   padding-bottom: 60px;
   border-radius: 30px;
   background-color: #0c0c0c;
-  background-image: url('/img/ad/ad-bg-mob@1.webp');
+  background-image: image-set(
+    url('/img/ad/ad-bg-mob@2.webp') type('image/webp') 2x,
+    url('/img/ad/ad-bg-mob@1.webp') type('image/webp') 1x,
+    url('/img/ad/ad-bg-mob@2.png') 2x,
+    url('/img/ad/ad-bg-mob@1.png') 1x
+  );
+  background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -30,36 +34,31 @@
   color: rgba(251, 251, 251, 0.5);
 }
 
-.btn-ad {
+.link-ad {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   border: 1px solid rgba(251, 251, 251, 0.15);
   background-color: inherit;
 }
-.button:hover,
-.button:focus {
-  color: inherit;
+.link-ad:hover,
+.link-ad:focus {
   background-color: #fbfbfb;
+  color: inherit;
 }
 
-@media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .advertisement {
-    background-image: url('/img/ad/ad-bg-mob@2.webp');
-  }
-}
 @media screen and (min-width: 768px) {
   @media (max-width: 1279px) {
     .advertisement {
-      background-image: url('/img/ad/ad-bg-tab@1.webp');
-    }
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      .advertisement {
-        background-image: url('/img/ad/ad-bg-tab@2.webp');
-      }
+      background-image: image-set(
+        url('/img/ad/ad-bg-tab@2.webp') type('image/webp') 2x,
+        url('/img/ad/ad-bg-tab@1.webp') type('image/webp') 1x,
+        url('/img/ad/ad-bg-tab@2.png') 2x,
+        url('/img/ad/ad-bg-tab@1.png') 1x
+      );
     }
   }
+
   .advertisement {
     max-width: 704px;
     padding-top: 80px;
@@ -84,14 +83,12 @@
     max-width: 1150px;
     padding-top: 83px;
     padding-bottom: 83px;
-    background-image: url('/img/ad/ad-bg-pc@1.webp');
-  }
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    .advertisement:after {
-      background-image: url('/img/ad/ad-bg-pc@2.webp');
-    }
+    background-image: image-set(
+      url('/img/ad/ad-bg-pc@2.webp') type('image/webp') 2x,
+      url('/img/ad/ad-bg-pc@1.webp') type('image/webp') 1x,
+      url('/img/ad/ad-bg-pc@2.png') 2x,
+      url('/img/ad/ad-bg-pc@1.png') 1x
+    );
   }
 
   .advertisement .container {
