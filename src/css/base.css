@@ -119,6 +119,9 @@ body {
 a,
 .button:hover,
 .button:focus {
-  background-color: #1f3cd4;
   outline: 2px solid rgba(51, 80, 233, 0.2);
+}
+.button:hover,
+.button:focus {
+  background-color: #1f3cd4;
 }
