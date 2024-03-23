@@ -6,8 +6,14 @@
   width: 335px;
   height: 262px;
   padding: 32px 36px;
+  border: 1px solid rgba(12, 12, 12, 0.05);
   border-radius: 30px;
   background-color: #f3f3f3;
+  transition: transform 1000ms ease, box-shadow 1000ms ease;
+}
+.reviews-list-item-one:hover {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  transform: scale(1.05);
 }
 
 .reviews-list-item-two {
@@ -76,8 +82,14 @@
     width: 344px;
     height: 272px;
     padding: 32px 36px;
+  border: 1px solid rgba(12, 12, 12, 0.05);
     border-radius: 30px;
     background-color: #f3f3f3;
+    transition: transform 1000ms ease, box-shadow 1000ms ease;
+  }
+  .reviews-list-item-two:hover {
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    transform: scale(1.05);
   }
 }
 
@@ -100,7 +112,13 @@
     width: 370px;
     height: 272px;
     padding: 32px 36px;
+  border: 1px solid rgba(12, 12, 12, 0.05);
     border-radius: 30px;
     background-color: #f3f3f3;
+    transition: transform 1000ms ease, box-shadow 1000ms ease;
+  }
+  .reviews-list-item-three:hover {
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    transform: scale(1.05);
   }
 }
