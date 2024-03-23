@@ -10,7 +10,7 @@
     url('/img/ad/ad-bg-mob@2.png') 2x,
     url('/img/ad/ad-bg-mob@1.png') 1x
   );
-  background-position: center;
+  background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
 }
