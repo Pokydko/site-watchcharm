@@ -7,7 +7,7 @@
 }
 
 .catalog-list-item {
-  max-width: 335px;
+  width: calc((100% - 20px) / 1);
   padding: 24px 28px;
   border: 1px solid rgba(12, 12, 12, 0.05);
   border-radius: 30px;
@@ -82,7 +82,7 @@ button.catalog-show-more-btn {
   }
 
   .catalog-list-item {
-    max-width: 344px;
+    width: calc((100% - 32px) / 2);
     padding: 24px 32px;
   }
   .catalog-img {
@@ -108,7 +108,7 @@ button.catalog-show-more-btn {
     gap: 32px 23px;
   }
   .catalog-list-item {
-    max-width: 368px;
+    width: calc((100% - 69px) / 3)
   }
   .catalog-img {
     width: 304px;
