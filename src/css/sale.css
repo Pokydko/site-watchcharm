@@ -108,6 +108,12 @@
   border-radius: 8px;
   padding: 8px 12px;
   width: auto;
+  transition: border 1000ms ease, text-shadow 1000ms ease, transform 1000ms ease;
+}
+.sale-watch-advantages-item:hover {
+  border: none;
+  transform: scale(1.2);
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
 }
 @media screen and (min-width: 768px) {
   .sale-watch-wrapper-item {
@@ -186,6 +192,7 @@
   .sale-watch-advantages-item {
     line-height: 1.15;
   }
+
   .sale-watch-info-characteristics {
     max-width: 410px;
   }
