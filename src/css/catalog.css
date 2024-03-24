@@ -26,12 +26,6 @@ img {
   transform: scale(1.05);
 }
 
-.catalog-img {
-  display: block;
-  width: 100%;
-  margin-right: auto;
-  margin-left: auto;
-}
 .catalog-product-card {
   margin-bottom: 10px;
 }
