@@ -18,7 +18,10 @@
 .header-menu-list {
   display: none;
 }
-
+.open-menu-icon {
+  width: 34px;
+  height: 34px;
+}
 .open-menu-btn {
   line-height: 0;
   background-color: transparent;
@@ -26,6 +29,7 @@
   stroke: #0c0c0c;
   padding-top: 20px;
   padding-bottom: 20px;
+  height: 100%;
 }
 
 .header-social-list {
@@ -37,6 +41,14 @@
     font-size: 20px;
     padding-top: 26px;
     padding-bottom: 26px;
+  }
+  .open-menu-btn {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+  .open-menu-icon {
+    width: 40px;
+    height: 40px;
   }
 }
 
@@ -84,6 +96,8 @@
     display: flex;
     justify-content: center;
     gap: 10px;
+    padding-top: 26px;
+    padding-bottom: 26px;
   }
   .header-social-link {
     width: 100%;
