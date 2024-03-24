@@ -2,9 +2,11 @@
 .reviews-list {
   display: flex;
 }
-
+.reviews-container {
+max-width: 335px;
+  }
 .reviews-list-item {
- width: 335px;
+  
   padding: 32px 36px;
   border: 1px solid rgba(12, 12, 12, 0.05);
   border-radius: 30px;
