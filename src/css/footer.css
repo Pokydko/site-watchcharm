@@ -7,6 +7,7 @@
   background-color: #0c0c0c;
   max-width: 335px;
   margin: 0 auto;
+  width: calc(100% - 40px);
 }
 @media screen and (min-width: 768px) {
   .footer-container {
@@ -129,7 +130,7 @@
     align-items: baseline;
     gap: 10px;
     padding-right: 0;
-    padding-top: 40;
+    padding-top: 40px;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -332,10 +333,6 @@
 
 @media screen and (min-width: 1280px) {
   .footer-address-text {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 129%;
-    color: #fbfbfb;
     text-align: left;
   }
 }
