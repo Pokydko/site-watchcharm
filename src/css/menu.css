@@ -8,12 +8,14 @@
       rgba(12, 12, 12, 0.92),
       rgba(12, 12, 12, 0.92)
     ),
-    url('/img/menu/menu-bg-mob@1.webp'), url('/img/menu/menu-bg-mob@1.jpg');
+    url('/img/menu/menu-bg-mob@1.jpg');
+  background-image: -webkit-image-set(url('/img/menu/menu-bg-mob@1.webp') 1x);
+  background-image: image-set(url('/img/menu/menu-bg-mob@1.webp') 1x);
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
-  opacity: 1;
-  visibility: visible;
+  opacity: 0;
+  visibility: hidden;
   display: flex;
   width: 200px;
   height: 100%;
@@ -24,8 +26,8 @@
 }
 .mobile-menu.is-open {
   transform: translateX(0);
-  opacity: 0;
-  visibility: hidden;
+  opacity: 1;
+  visibility: visible;
   pointer-events: auto;
 }
 .menu-link-active {
@@ -47,7 +49,9 @@
         rgba(12, 12, 12, 0.92),
         rgba(12, 12, 12, 0.92)
       ),
-      url('/img/menu/menu-bg-mob@2.webp'), url('/img/menu/menu-bg-mob@2.jpg');
+      url('/img/menu/menu-bg-mob@2.jpg');
+    background-image: -webkit-image-set(url('/img/menu/menu-bg-mob@2.webp') 2x);
+    background-image: image-set(url('/img/menu/menu-bg-mob@2.webp') 2x);
   }
 }
 @media only screen and (min-width: 768px) {
@@ -56,7 +60,9 @@
         rgba(12, 12, 12, 0.92),
         rgba(12, 12, 12, 0.92)
       ),
-      url('/img/menu/menu-bg-tab@1.webp'), url('/img/menu/menu-bg-tab@1.jpg');
+      url('/img/menu/menu-bg-tab@1.jpg');
+    background-image: -webkit-image-set(url('/img/menu/menu-bg-tab@1.webp') 1x);
+    background-image: image-set(url('/img/menu/menu-bg-tab@1.webp') 1x);
   }
 }
 @media only screen and (min-resolution: 192dpi) and (min-width: 768px) and (max-width: 1279px) {
@@ -65,7 +71,9 @@
         rgba(12, 12, 12, 0.92),
         rgba(12, 12, 12, 0.92)
       ),
-      url('/img/menu/menu-bg-tab@2.webp'), url('/img/menu/menu-bg-tab@2.jpg');
+      url('/img/menu/menu-bg-tab@2.jpg');
+    background-image: -webkit-image-set(url('/img/menu/menu-bg-tab@2.webp') 2x);
+    background-image: image-set(url('/img/menu/menu-bg-tab@2.webp') 2x);
   }
 }
 .mobile-menu-container {
@@ -82,16 +90,9 @@
   position: absolute;
   top: 20px;
   right: 20px;
-  border: none;
-  border-radius: 0;
-  line-height: 0;
   padding: 0;
   background-color: transparent;
-  outline: none;
-  color: transparent;
-  stroke-width: 2.5px;
   stroke: #fbfbfb;
-  min-width: 0;
   width: 34px;
   height: 34px;
   display: flex;
