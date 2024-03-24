@@ -1,26 +1,25 @@
+
 .reviews-list {
   display: flex;
 }
 
-.reviews-list-item-one {
-  width: 335px;
-  height: 262px;
+.reviews-list-item {
+ width: 335px;
   padding: 32px 36px;
   border: 1px solid rgba(12, 12, 12, 0.05);
   border-radius: 30px;
   background-color: #f3f3f3;
   transition: transform 1000ms ease, box-shadow 1000ms ease;
 }
-.reviews-list-item-one:hover {
+.reviews-list-item:hover {
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   transform: scale(1.05);
 }
 
-.reviews-list-item-two {
+.hidden-list {
   display: none;
 }
-
-.reviews-list-item-three {
+.hidden-list-item {
   display: none;
 }
 
@@ -52,6 +51,16 @@
 }
 
 @media only screen and (min-width: 768px) {
+  .reviews-container {
+max-width: 704px;
+  }
+  .reviews-list-item {
+display: inline;
+}
+.reviews-list-item:hover {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  transform: scale(1.05);
+}
   .reviews-list {
     gap: 16px;
   }
@@ -72,53 +81,20 @@
     text-align: center;
   }
 
-  .reviews-list-item-one {
-    width: 344px;
-    height: 272px;
-  }
-
-  .reviews-list-item-two {
-    display: list-item;
-    width: 344px;
-    height: 272px;
-    padding: 32px 36px;
-  border: 1px solid rgba(12, 12, 12, 0.05);
-    border-radius: 30px;
-    background-color: #f3f3f3;
-    transition: transform 1000ms ease, box-shadow 1000ms ease;
-  }
-  .reviews-list-item-two:hover {
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-    transform: scale(1.05);
-  }
+.hidden-list-item {
+  display: none;
+  width: 344px;
 }
-
+}
 @media screen and (min-width: 1280px) {
-  .reviews-list {
-    gap: 20px;
-    justify-content: center;
+.reviews-container {
+max-width: 1280px;
   }
-
-  .reviews-list-item-one {
-    width: 370px;
-  }
-
-  .reviews-list-item-two {
-    width: 370px;
-  }
-
-  .reviews-list-item-three {
-    display: list-item;
-    width: 370px;
-    height: 272px;
-    padding: 32px 36px;
-  border: 1px solid rgba(12, 12, 12, 0.05);
-    border-radius: 30px;
-    background-color: #f3f3f3;
-    transition: transform 1000ms ease, box-shadow 1000ms ease;
-  }
-  .reviews-list-item-three:hover {
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-    transform: scale(1.05);
-  }
+.reviews-list {
+  gap: 20px;
+}
+.reviews-list-item {
+display: inline;
+width: 370px;
+}
 }
