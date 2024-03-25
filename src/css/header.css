@@ -139,10 +139,10 @@
     color: #0c0c0c;
     padding-top: 30px;
     padding-bottom: 40px;
-  }
-  .header-link-active {
     position: relative;
   }
+
+  .header-menu-link:hover::after,
   .header-link-active::after {
     content: '';
     position: absolute;
@@ -153,6 +153,10 @@
     border-radius: 100%;
     background-color: #3350e9;
   }
+  .header-menu-link:hover::after {
+    background-color: rgb(51, 80, 233, 0.8);
+  }
+
   .header-social-list {
     display: flex;
     justify-content: center;
