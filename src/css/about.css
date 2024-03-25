@@ -37,13 +37,7 @@
 .view-catalog-link:focus {
   background-color: #1f3cd4;
 }
-.about-img {
-  transition: transform 1000ms ease, box-shadow 1000ms ease;
-}
-.about-img:hover {
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-  transform: scale(1.05);
-}
+
 @media screen and (min-width: 768px) {
   .about-container {
     border-radius: 50px;
