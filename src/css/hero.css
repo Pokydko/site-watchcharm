@@ -14,15 +14,15 @@
   margin-bottom: 20px;
 }
 
+.hero-first {
+  margin-top: 60px;
+  max-width: 335px;
+}
 .accent-color {
   color: #3350e9;
   text-align: left;
 }
 
-.hero-first {
-  margin-top: 60px;
-  max-width: 335px;
-}
 .hero-second {
   display: flex;
   flex-direction: row;
