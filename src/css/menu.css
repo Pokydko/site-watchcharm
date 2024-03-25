@@ -10,8 +10,7 @@
   padding-top: 52px;
   padding-bottom: 40px;
   background-image: url('/img/menu/menu-bg-mob@1.jpg');
-  background-image: -webkit-image-set(url('/img/menu/menu-bg-mob@1.webp') 1x);
-  background-image: image-set(url('/img/menu/menu-bg-mob@1.webp') 1x);
+  background-image: url('/img/menu/menu-bg-mob@1.webp');
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -28,9 +27,10 @@
   pointer-events: auto;
   transform: translateX(0);
 }
-.menu-link-active {
+.mobile-menu-link {
   position: relative;
 }
+.mobile-menu-link:hover::after,
 .menu-link-active::after {
   content: '';
   position: absolute;
@@ -41,25 +41,25 @@
   border-radius: 50%;
   background-color: #3350e9;
 }
+.mobile-menu-link:hover::after {
+  background-color: rgba(51, 81, 233, 0.5);
+}
 @media only screen and (min-resolution: 192dpi) and (max-width: 767px) {
   .mobile-menu {
     background-image: url('/img/menu/menu-bg-mob@2.jpg');
-    background-image: -webkit-image-set(url('/img/menu/menu-bg-mob@2.webp') 2x);
-    background-image: image-set(url('/img/menu/menu-bg-mob@2.webp') 2x);
+    background-image: url('/img/menu/menu-bg-mob@2.webp');
   }
 }
 @media only screen and (min-width: 768px) {
   .mobile-menu {
     background-image: url('/img/menu/menu-bg-tab@1.jpg');
-    background-image: -webkit-image-set(url('/img/menu/menu-bg-tab@1.webp') 1x);
-    background-image: image-set(url('/img/menu/menu-bg-tab@1.webp') 1x);
+    background-image: url('/img/menu/menu-bg-tab@1.webp');
   }
 }
 @media only screen and (min-resolution: 192dpi) and (min-width: 768px) and (max-width: 1279px) {
   .mobile-menu {
     background-image: url('/img/menu/menu-bg-tab@2.jpg');
-    background-image: -webkit-image-set(url('/img/menu/menu-bg-tab@2.webp') 2x);
-    background-image: image-set(url('/img/menu/menu-bg-tab@2.webp') 2x);
+    background-image: url('/img/menu/menu-bg-tab@2.webp');
   }
 }
 .mobile-menu-container {
