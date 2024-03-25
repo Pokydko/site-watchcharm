@@ -57,13 +57,12 @@
   color: #3350e9;
 }
 
-.hero-people {
+/* .hero-people {
   display: flex;
-
   max-width: 108px;
   height: 44px;
-}
-img {
+} */
+.hero-people {
   overflow: hidden;
   width: 100%;
   height: 100%;
@@ -116,5 +115,10 @@ img {
   }
   .hero-title {
     font-size: 72px;
+  }
+  .hero-people {
+    display: flex;
+    max-width: 146px;
+    height: 60px;
   }
 }
