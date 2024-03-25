@@ -66,7 +66,7 @@
 }
 
 .footer-logo {
-  max-width: 90px;
+  /* max-width: 90px; */
   font-weight: 500;
   font-size: 16px;
   letter-spacing: -0.02em;
@@ -274,7 +274,14 @@
   font-size: 12px;
   line-height: 133%;
   text-align: center;
+  transition: border 1000ms ease, text-shadow 1000ms ease, transform 1000ms ease;
 }
+.footer-nav-item:hover {
+  border: none;
+  transform: scale(1.2);
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+
 @media screen and (min-width: 768px) {
   .footer-nav-item {
     font-weight: 500;
@@ -320,13 +327,13 @@
   color: #fbfbfb;
   text-align: left;
   margin-bottom: 16px;
-  max-width: 83px;
+  width: 83px;
 }
 @media screen and (min-width: 768px) {
   .footer-address-text {
     font-size: 14px;
     line-height: 18px;
-    max-width: 162px;
+    width: 162px;
     line-height: 129%;
   }
 }
