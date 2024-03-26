@@ -1,16 +1,16 @@
 .hero-container {
   display: flex;
   flex-direction: column;
-  margin-bottom: 40px;
   justify-content: space-between;
+  margin-bottom: 40px;
 }
 
 .hero-title {
+  margin-bottom: 20px;
+  color: #0c0c0c;
   font-weight: 600;
   font-size: 40px;
   line-height: 0.95;
-  color: #0c0c0c;
-  margin-bottom: 20px;
 }
 
 .accent-color {
@@ -20,10 +20,10 @@
 
 .hero-first {
   max-width: 335px;
+  margin-top: 60px;
 }
 .hero-second {
   display: flex;
-
   justify-content: space-between;
   margin-bottom: 28px;
 }
@@ -34,16 +34,16 @@
 
 .scroll-down-link {
   display: flex;
-  text-decoration: underline;
-  align-items: end;
   justify-content: end;
-  font-size: 20px;
+  align-items: end;
+  color: #0c0c0c;
   font-weight: 500;
-  letter-spacing: -0.02em;
+  font-size: 20px;
 
   line-height: 1;
+  letter-spacing: -0.02em;
+  text-decoration: underline;
   text-decoration-skip-ink: none;
-  color: #0c0c0c;
 }
 
 .scroll-down-link:hover {
@@ -59,14 +59,15 @@
 @media screen and (min-width: 768px) {
   .hero-first {
     display: flex;
-    max-width: max-content;
     gap: 11px;
+    max-width: max-content;
+    margin-top: 80px;
   }
   .scroll-down-link {
-    font-size: 20px;
-    line-height: 1;
     justify-content: flex-end;
     align-items: end;
+    font-size: 20px;
+    line-height: 1;
   }
 
   .hero-second {
@@ -81,8 +82,8 @@
     font-size: 70px;
   }
   .hero-text {
-    font-size: 16px;
     max-width: 480px;
+    font-size: 16px;
   }
   .hero-people {
     display: flex;
@@ -103,16 +104,16 @@
     left: -100px;
     width: calc(100% + 100px);
     height: 100%;
+    border-radius: 10px;
     background: linear-gradient(
       to right,
       rgba(255, 255, 255, 0.3) 0%,
       rgba(255, 255, 255, 0.1) 25%,
       rgba(255, 255, 255, 0) 100%
     );
+    filter: blur(10px);
     transform: skewX(25deg);
     animation: slide 8s linear infinite;
-    border-radius: 10px;
-    filter: blur(10px);
   }
   @keyframes slide {
     0% {
@@ -127,8 +128,8 @@
 @media screen and (min-width: 1280px) {
   .hero-first {
     display: flex;
-    max-width: max-content;
     gap: 407px;
+    max-width: max-content;
   }
 
   .hero-second {
@@ -141,10 +142,10 @@
   }
   .hero-text {
     max-width: 480px;
+    color: rgba(12, 12, 12, 0.7);
     font-size: 16px;
     line-height: 1.25;
     letter-spacing: -0.02em;
-    color: rgba(12, 12, 12, 0.7);
   }
   .hero-title {
     font-size: 72px;
