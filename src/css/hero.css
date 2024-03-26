@@ -1,15 +1,10 @@
-.hero-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin-bottom: 40px;
-}
 .hero-title {
   margin-bottom: 20px;
   color: #0c0c0c;
   font-weight: 600;
   font-size: 40px;
   line-height: 0.95;
+  letter-spacing: -0.02em;
 }
 .accent-color {
   color: #3350e9;
@@ -70,7 +65,9 @@
     max-width: max-content;
   }
   .hero-title {
+    max-width: 557px;
     font-size: 70px;
+    letter-spacing: -0.02em;
   }
   .hero-text {
     max-width: 480px;
@@ -133,10 +130,10 @@
     color: rgba(12, 12, 12, 0.7);
     font-size: 16px;
     line-height: 1.25;
-    letter-spacing: -0.02em;
   }
   .hero-title {
     font-size: 72px;
+    max-width: 597px;
   }
   .hero-people {
     display: flex;
