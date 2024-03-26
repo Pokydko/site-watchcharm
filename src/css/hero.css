@@ -20,6 +20,7 @@
 
 .hero-first {
   max-width: 335px;
+  margin-top: 60px;
 }
 .hero-second {
   display: flex;
@@ -61,6 +62,7 @@
     display: flex;
     max-width: max-content;
     gap: 11px;
+    margin-top: 80px;
   }
   .scroll-down-link {
     font-size: 20px;
