@@ -1,3 +1,6 @@
+.sale {
+  margin-top: 60px;
+}
 .sale-watch-wrapper {
   display: flex;
   flex-direction: row;
@@ -111,6 +114,9 @@
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
 }
 @media screen and (min-width: 768px) {
+  .sale {
+    margin-top: 80px;
+  }
   .sale-watch-wrapper-item {
     border-radius: 20px;
     width: 132px;
@@ -163,6 +169,9 @@
   }
 }
 @media screen and (min-width: 1280px) {
+  .sale {
+    margin-top: 100px;
+  }
   .sale-watch {
     display: flex;
   }

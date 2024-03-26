@@ -10,6 +10,7 @@
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
+  margin-bottom: 0;
   animation: slideRight 20000ms ease infinite;
 }
 @keyframes slideRight {
