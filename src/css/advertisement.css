@@ -11,6 +11,7 @@
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
+  margin-bottom: 0;
 }
 @media only screen and (max-width: 767px) and (min-resolution: 192dpi) {
   .advertisement {
