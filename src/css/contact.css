@@ -26,7 +26,6 @@
 }
 
 .contact-form-input::placeholder {
-  font-family: 'Gilroy', sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.29;
@@ -61,7 +60,6 @@
 }
 .contact-form-send-btn {
   min-width: 134px;
-  border-radius: 16px;
   height: 42px;
   outline: transparent;
   padding: 12px 50px;
@@ -100,12 +98,31 @@
     padding-left: 60px;
     padding-right: 60px;
     max-width: 580px;
+    min-height: 556px;
     margin-right: 40px;
     margin-bottom: 0;
+    transition: max-width 500ms linear, margin-right 500ms linear,
+      transform 500ms linear;
   }
 
+  .contact-form-wrapper:hover {
+    margin-right: 0;
+    max-width: 100%;
+    transform: translateX(12px);
+  }
+  .contact-us-photo {
+    padding-top: 2.5px;
+    transition: width 500ms linear;
+  }
+  .contact-form-wrapper:hover + .contact-us-photo {
+    width: 0.001px;
+    transition: width 500ms linear;
+  }
+  .contact-us-photo {
+    width: 100%;
+  }
   .contact-us-text {
-    max-width: 460px;
+    max-width: 100%;
     margin-bottom: 32px;
   }
   .contact-form-input {
