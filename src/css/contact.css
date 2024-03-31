@@ -105,7 +105,7 @@
       transform 500ms linear;
   }
 
-  .contact-form-wrapper:hover {
+  .contact-form-wrapper:focus-within {
     margin-right: 0;
     max-width: 100%;
     transform: translateX(12px);
@@ -114,7 +114,7 @@
     padding-top: 2.5px;
     transition: width 500ms linear;
   }
-  .contact-form-wrapper:hover + .contact-us-photo {
+  .contact-form-wrapper:focus-within + .contact-us-photo {
     width: 0.001px;
     transition: width 500ms linear;
   }

@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/t7d5/",
+    "build": "vite build --base=/site-watchcharm/",
     "preview": "vite preview"
   },
   "devDependencies": {
