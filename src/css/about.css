@@ -97,32 +97,42 @@
   .about-img::before {
     content: '';
     position: absolute;
-    top: 50%;
-    left: -190px;
-    height: 0;
+    top: 33%;
+    left: -100px;
+    transition: transform 500ms ease;
+    transform: scale(1);
   }
   .about-img:hover::before {
     content: 'A few words from Us';
+    width: 50px;
+    height: 0;
+    text-align: right;
+    transform: scale(1.1);
   }
   .about-img::after {
     content: '';
     position: absolute;
     top: 0;
+    left: 100px;
+    width: 700px;
     height: 100%;
-    border-radius: 3px;
+    text-align: right;
+    transition: transform 1000ms linear;
+    transform: scale(0);
   }
   .about-img:hover::after {
-    /* content: ''; */
-    right: -350px;
-    width: 350px;
-    top: 50%;
-    height: 50%;
+    transform: scale(1);
+  }
+  .about:hover .about-img::after {
+    transform: scale(1);
   }
   .about-container:hover + .about-img::after {
     content: 'Look on the Watch';
-    right: -350px;
-    width: 350px;
-    top: 50%;
-    height: 50%;
+    top: 33%;
+    left: 570px;
+    width: 1px;
+    height: 1px;
+    transition: transform 500ms linear;
+    transform: scale(1.1);
   }
 }
