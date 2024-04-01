@@ -31,10 +31,12 @@ https://www.figma.com/file/bskxhpmeboUK1NnQIkHTRi/WatchCharm?type=design&node-id
 # Показники швидкості та html/css валідації
 
 https://pagespeed.web.dev/analysis?url=https://pokydko.github.io/site-watchcharm/
+
 https://validator.w3.org/nu/?doc=https://pokydko.github.io/site-watchcharm/
+
 https://jigsaw.w3.org/css-validator/validator?uri=https://pokydko.github.io/site-watchcharm/
 
-## Нотатка про деплой (якщо треба перейменувати )
+## Нотатка про деплой (якщо треба перейменувати репозиторій)
 
 `--base=/<REPO>/` у файлі `package.json` має містити актуальну адресу
 репозиторія

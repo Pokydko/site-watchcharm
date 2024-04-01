@@ -30,4 +30,39 @@
     openMenuBtn.setAttribute('aria-expanded', false);
     bodyScrollLock.enableBodyScroll(document.body);
   });
+
+  // active class of menu items onscroll
+  window.addEventListener('scroll', () => {
+    let scrollDistance = window.scrollY + window.innerHeight / 3;
+
+    // if (window.innerWidth > 768) {
+    document.querySelectorAll('.section').forEach((el, i) => {
+      if (
+        el.offsetTop - document.querySelector('.nav').clientHeight <=
+        scrollDistance
+      ) {
+        document.querySelectorAll('.nav a').forEach(el => {
+          if (el.classList.contains('header-link-active')) {
+            el.classList.remove('header-link-active');
+          }
+        });
+        document
+          .querySelectorAll('.nav li')
+          [i].querySelector('a')
+          .classList.add('header-link-active');
+
+        // the same for menu
+        document.querySelectorAll('.mobile-menu-list a').forEach(el => {
+          if (el.classList.contains('menu-link-active')) {
+            el.classList.remove('menu-link-active');
+          }
+        });
+        document
+          .querySelectorAll('.mobile-menu-list li')
+          [i].querySelector('a')
+          .classList.add('menu-link-active');
+      }
+    });
+    // }
+  });
 })();

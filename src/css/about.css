@@ -71,22 +71,51 @@
     margin-bottom: 40px;
   }
 
-  .about-img,
-  .about-container {
+  .about-container,
+  .about-img {
     position: relative;
-    transition: transform 0.5s cubic-bezier(1, -0.2, 0.83, 0.67) 0.4s,
-      padding-right 0.5s cubic-bezier(1, -0.2, 0.83, 0.67) 0.4s;
+    transition: transform 0.5s linear 0.4s, padding-right 0.5s 0.25s linear,
+      padding 0.25s linear, margin-bottom 0.25s linear;
   }
   .about:hover .about-container {
     z-index: 1;
-    transform: translateX(285px);
+    width: 532px; /* to be able hidden under img */
+    height: 532px;
+    padding-top: 70px;
+    padding-right: 50px;
+    padding-left: 50px;
+    transform: translateX(51.5%);
   }
-  .about-container:hover + .about-img {
-    transform: translateX(-55%);
+  .about:hover .about-img {
+    margin-bottom: 10px;
+    padding-right: 50px;
+    transform: translateX(-51.5%);
   }
   .about-img:hover {
     z-index: 2;
-    transform: translateY(200px) scale(1.7);
-    padding-right: 285px;
+  }
+  .about-img::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -190px;
+    height: 0;
+  }
+  .about-img:hover::before {
+    content: 'A few words from Us';
+  }
+  .about-img::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -350px;
+    width: 350px;
+    height: 100%;
+    border-radius: 3px;
+  }
+  .about-container:hover + .about-img::after {
+    content: 'Look on the Watch';
+    top: 50%;
+    height: 50%;
   }
 }

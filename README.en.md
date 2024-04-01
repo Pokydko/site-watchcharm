@@ -27,7 +27,9 @@ Marta Jost (footer)
 # Speed indexes and html/css validation
 
 https://pagespeed.web.dev/analysis?url=https://pokydko.github.io/site-watchcharm/
+
 https://validator.w3.org/nu/?doc=https://pokydko.github.io/site-watchcharm/
+
 https://jigsaw.w3.org/css-validator/validator?uri=https://pokydko.github.io/site-watchcharm/
 
 # We use Vanilla App Template (https://vitejs.dev/); It needs Node.js
